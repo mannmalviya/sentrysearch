@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { GithubIcon } from "@/components/landing/github-icon"
+import { NavGithubButton } from "@/components/landing/github-star-button"
 
 export function Nav() {
   return (
@@ -24,33 +24,25 @@ export function Nav() {
           <span className="font-semibold text-white tracking-tight">SentrySearch</span>
         </Link>
 
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-6">
           <Link
             href="#how-it-works"
-            className="text-sm text-zinc-400 hover:text-zinc-200 transition-colors hidden sm:block"
+            className="text-base text-zinc-400 hover:text-zinc-200 transition-colors hidden sm:block"
           >
             How it works
           </Link>
           <Link
             href="#features"
-            className="text-sm text-zinc-400 hover:text-zinc-200 transition-colors hidden sm:block"
+            className="text-base text-zinc-400 hover:text-zinc-200 transition-colors hidden sm:block"
           >
             Features
           </Link>
-          <Link
-            href="https://github.com/ssrajadh/sentrysearch"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-sm text-zinc-400 hover:text-zinc-200 transition-colors"
-          >
-            <GithubIcon className="h-4 w-4" />
-            <span className="hidden sm:inline">GitHub</span>
-          </Link>
+          <NavGithubButton />
           <Link
             href="https://github.com/ssrajadh/sentrysearch#getting-started"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-md bg-white px-3.5 py-1.5 text-sm font-medium text-black hover:bg-zinc-100 transition-colors"
+            className="rounded-md bg-white px-4 py-2 text-base font-medium text-black hover:bg-zinc-100 transition-colors"
           >
             Get Started
           </Link>

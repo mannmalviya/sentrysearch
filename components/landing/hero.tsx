@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
-import { GithubIcon } from "@/components/landing/github-icon"
+import { HeroGithubButton } from "@/components/landing/github-star-button"
 
 const terminalLines = [
   { type: "prompt", text: "sentrysearch search \"red truck running a stop sign\"" },
@@ -61,15 +61,7 @@ export function Hero() {
             Get Started
             <ArrowRight className="h-4 w-4" />
           </Link>
-          <Link
-            href="https://github.com/ssrajadh/sentrysearch"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
-          >
-            <GithubIcon className="h-4 w-4" />
-            View on GitHub
-          </Link>
+          <HeroGithubButton />
         </div>
 
         {/* Terminal demo */}
